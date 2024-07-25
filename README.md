@@ -1,6 +1,10 @@
 # chatserver
 可以工作在nginx tcp负载均衡环境中的集群聊天服务器和客户端代码源码 基于muduo库 redis mysql实现
 
+# 安装boost + muduo网络库开发环境
+
+# 安装CMake环境
+
 # nignx配置
 nginx在1.9版本之前，只支持http协议web服务器的负载均衡，从1.9版本开始以后，nginx开始支持tcp的长连接负载均衡，但是nginx默认并没有编译tcp负载均衡模块，编写它时，需要加入--with-stream参数来激活这个模块。
 
