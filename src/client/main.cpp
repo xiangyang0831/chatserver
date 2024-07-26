@@ -159,12 +159,6 @@ int main(int argc, char **argv)
             }
             else
             {
-                char buffer[1024] = {0};
-                len = recv(clientfd, buffer, 1024, 0);
-                if (-1 == len)
-                {
-                    cerr << "recv reg response error" << endl;
-                }
                 sem_wait(&rwsem); // 等待子线程处理完注册响应消息后
             }
         }
